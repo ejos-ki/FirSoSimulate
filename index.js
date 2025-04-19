@@ -1,7 +1,7 @@
 /*
         File Type :    Vanilla JavaScript (JS)
         Used in   :    index.html
-        Code by   :    Jeo D. Latorre
+        Code by   :    
 */
 
 //  Variable Declarations and Initializations
