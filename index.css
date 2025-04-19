@@ -1,0 +1,214 @@
+/*
+        File Type :    Cascading Style Sheets (CSS)
+        Used in   :    index.html
+        Code by   :    Jeo D. Latorre
+*/
+
+html {
+    height: 100%;
+    display: grid;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    align-items: center;
+    background-color: #F0F8FF;
+    user-select: none;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    gap: 5px;
+
+    height: 60%;
+    max-height: 330px;
+    min-height: 330px;
+
+    width: 70%;
+    max-width: 800px;
+    min-width: 300px;
+    justify-self: center;
+    
+    position: relative;
+    background-color: #e6ecf1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin: 0;
+}
+
+/*      HEADER SECTION       */
+header {
+    background-color: #FFC69E;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.appName, .appDetail {
+    cursor: default;
+}
+
+.appName {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 35px;
+    font-weight:600;
+    letter-spacing: 5px;
+
+    width: 282px;
+    height: 40px;
+    position: relative;
+}
+
+.appDetail {
+    font-size: 12px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    font-weight: 100;
+    letter-spacing: 0;
+    opacity: 0.7;
+}
+
+
+/*      SENSOR DATA SIMULATOR SECTION       */
+.btnParent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    scrollbar-width: none;
+}
+
+.btnParent::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    background-color: rgba(135, 77, 22, 0.2);
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.label {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #ca290c;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+button:hover {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+
+/*      PHONE NUMBER INPUT SECTION       */
+input {
+    padding: 5px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    background-color: rgba(255, 198, 158, 0.5); 
+}
+
+input:focus {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.inputParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding-inline: 15px;
+}
+
+.input {
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.edit, .done{
+    position: absolute;
+    border: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -30px;
+    padding-inline: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+}
+
+.done {
+    visibility: hidden;
+}
+
+.edit:hover, .done:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.edit:active, .done:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*      FOOTER SECTION           */
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -20px;
+}
+
+a {
+    text-decoration: none;
+    color: #bc7949;
+}
+
+.footerDetails {
+    text-align: center;
+    font-size: 13px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.7;
+}
